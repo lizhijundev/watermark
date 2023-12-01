@@ -82,6 +82,7 @@ function download() {
 function reset() {
   if (!canvasDom.value) return
   const ctx = canvasDom.value.getContext('2d')
+  ctx.reset();
   ctx.clearRect(0, 0, canvasDom.value.width, canvasDom.value.height)
   imgFile.value = undefined
 }
